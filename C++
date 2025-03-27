@@ -1,0 +1,19 @@
+#include <iostream>
+#include <thread>
+#include <chrono>
+
+using namespace std;
+
+void fakeHack(string message, int delay) {
+    cout << "[RTX COMMUNITY] " << message << endl;
+    this_thread::sleep_for(chrono::seconds(delay));
+}
+
+int main() {
+    fakeHack("Initializing Hack Tool...", 2);
+    fakeHack("Bypassing security protocols...", 2);
+    fakeHack("Injecting JavaScript payload...", 2);
+    fakeHack("Extracting data... Done!", 2);
+    fakeHack("Join us at: https://discord.gg/rtxtop1", 2);
+    return 0;
+}
